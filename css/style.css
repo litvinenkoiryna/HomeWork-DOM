@@ -1,0 +1,48 @@
+.button{
+    background-color:blue;
+    color:white;
+    padding: 5px;
+    width: 100px;
+    cursor: pointer;
+
+}
+.modal{
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    z-index: 1000;
+    width: 250px;
+    height: 150px;
+    background-color: cadetblue;
+    color:black;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.modal__active{
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+
+}
+
+/*lights*/
+
+.lights__body{
+    margin-left: 100px;
+    background-color: black;
+    width: 50px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.lights__lamp{
+    width: 30px;
+    height: 30px;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
