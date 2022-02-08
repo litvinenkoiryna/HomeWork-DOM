@@ -76,15 +76,28 @@ document.addEventListener('DOMContentLoaded',
 
 //3
 
+// let btn = document.getElementById('btn');
+// let i = -1
+// btn.onclick = function (){
+//     i++
+//     let colors = ['red', 'yellow', 'green'];
+//     let round = document.querySelectorAll('.lights__lamp');
+//     if(round[i-1]) round[i-1].style.backgroundColor = ' ';
+//     if(i === colors.length) i = 0;
+//     round[i].style.backgroundColor = colors[i];
+// }
+
+// Second version
 let btn = document.getElementById('btn');
 let i = -1
 btn.onclick = function (){
     i++
-    let colors = ['red', 'yellow', 'green'];
+    let colors = ['lights__lamp-red','lights__lamp-yellow','lights__lamp-green'];
     let round = document.querySelectorAll('.lights__lamp');
-    if(round[i-1]) round[i-1].style.backgroundColor = ' ';
+    if(round[i-1]) round[i-1].classList.add(colors[0]);
     if(i === colors.length) i = 0;
-    round[i].style.backgroundColor = colors[i];
+    round[i].classList.add(colors[i]);
+    //цей код для вимикання прошлого кольору, коли вмикаеться наступний. але чомусь зелений не вимикаеться(
+     // if(round[i-1]) round[i-1].classList.remove(colors[0]);
+     // round[i-1].classList.remove(colors[i-1]);
 }
-
-

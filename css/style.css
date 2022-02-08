@@ -46,3 +46,13 @@
     background-color: aliceblue;
     border-radius: 50%;
 }
+.lights__lamp-red{
+    background-color: red;
+}
+
+.lights__lamp-yellow {
+    background-color: yellow;
+}
+.lights__lamp-green{
+    background-color: green;
+}
